@@ -1,0 +1,14 @@
+// Mixin for responsive breakpoints
+@mixin breakpoint($breakpoint) {
+  // Check if the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+// Function for px to rem conversion
+@function rem($size) {
+  @return #{$size / 16}rem;
+}

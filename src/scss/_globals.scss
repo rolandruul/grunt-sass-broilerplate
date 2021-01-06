@@ -1,0 +1,31 @@
+// Breakpoints for media queries
+$breakpoints: (
+  'xs':  0px,
+  'sm':  576px,
+  'md':  768px,
+  'lg':  992px,
+  'xl':  1200px,
+  'xxl': 1400px
+) !default;
+
+// Container max-width related to breakpoint
+$breakpoint-max-width: (
+  // 'xs' has no max-width
+  'sm':  540px,
+  'md':  720px,
+  'lg':  960px,
+  'xl':  1140px,
+  'xxl': 1320px
+) !default;
+
+// Gutter width (0.75rem left and right)
+$gutter: 1.5rem;
+
+// Radius
+$radius: 4px;
+
+// Content
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}

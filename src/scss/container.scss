@@ -1,0 +1,13 @@
+// Page content container
+.container {
+  margin-left: auto;
+  margin-right:auto;
+  padding-left: $gutter;
+  padding-right:$gutter;
+  // Responsive container max-width
+  @include breakpoint(sm)  { max-width: map-get($breakpoint-max-width, 'sm'); }
+  @include breakpoint(md)  { max-width: map-get($breakpoint-max-width, 'md'); }
+  @include breakpoint(lg)  { max-width: map-get($breakpoint-max-width, 'lg'); }
+  @include breakpoint(xl)  { max-width: map-get($breakpoint-max-width, 'xl'); }
+  @include breakpoint(xxl) { max-width: map-get($breakpoint-max-width, 'xxl');}
+}
